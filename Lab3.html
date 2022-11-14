@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Lab3</h2>
+<input type="text" id="day">
+<button onclick="findDay()">Hangi gün?</button>
+<p id="result"></p>
+<script>
+function findDay() {
+    let userDay=document.getElementById('day').value;
+    let resultArea=document.getElementById('result');
+    if (userDay==1) {
+        resultArea.innerText="Pazartesi";
+        
+    } else if(userDay==2){
+        resultArea.innerText="Salı";
+    }
+    else if(userDay==3){
+        resultArea.innerText="Çarşamba";
+    }
+    else if(userDay==4){
+        resultArea.innerText="Perşembe";
+    }
+    else if(userDay==5){
+        resultArea.innerText="Cuma";
+    }
+    else if(userDay==6){
+        resultArea.innerText="Cumartesi";
+    }
+    else if(userDay==7){
+        resultArea.innerText="Pazar";
+    }
+    else{
+        resultArea.innerText="Geçersiz giriş";
+    }
+    
+    
+}
+
+
+</script>
+    
+</body>
+</html>
